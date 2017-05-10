@@ -1,0 +1,816 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<!--load方法导入footer.html-->
+		<script type="text/javascript">
+			$(function() {
+				$('#indexfoot').load("footer.html", function(res, status) {
+					console.log(status);
+					//需要写这句话才能导入js文件
+					var script = document.createElement('script');
+					script.src = "js/footer.js";
+					$('body').append(script);
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="headerBox commonWidth">
+	<div class="header flex commonBox">
+		<div class="header-left">
+			<span>您好，欢迎您来到零食网！</span>
+			<div id="top_center">
+				<a href="entry.html?index">[登录]</a>
+				<a href="register.html">[免费注册]</a>
+			</div>
+		</div>
+		<ul class="header-right">
+			<li><a href="#">我的订单</a></li>
+			<li>
+				<a href="#" class="line"></a>
+			</li>
+			<li><a href="#">积分兑换</a></li>
+			<li>
+				<a href="#" class="line"></a>
+			</li>
+			<li><a href="#">帮助中心</a></li>
+			<li>
+				<a href="#" class="line"></a>
+			</li>
+			<li><a href="#">官方微博</a></li>
+		</ul>
+	</div>
+</div>
+<div class="logoBox commonWidth">
+			<div class="logoContent flex commonBox">
+				<h1 class="logo">
+	    			<a href="index.html"><img src="images/logo.jpg"/></a>
+	    		</h1>
+				<div class="searchBox">
+					<form action="" method="post" class="formBox">
+						<div class="search flex">
+							<input type="text" name="" id="searchTxt" placeholder="搜索" />
+							<input type="submit" id="sub" value="找零食" />
+						</div>
+					</form>
+				</div>
+				<div class="hot">
+					<ul class="hotList">
+						<li><a href="#">海苔</a></li>
+						<li><a href="#">果冻</a></li>
+						<li><a href="#">饼干</a></li>
+						<li><a href="#">锅巴</a></li>
+						<li><a href="#">威化饼</a></li>
+					</ul>
+				</div>
+				<div id="logo_right">
+					<span class="red">0</span>
+					<span class="span2">我的购物车</span>
+				</div>
+			</div>
+		</div>
+		<div class="navBox commonWidth">
+			<div class="nav commonBox">
+				<ul class="navList">
+					<h3><a href="#">全部商品分类</a></h3>
+					<li class="home"><a href="#" >首页</a></li>
+					<li><a href="#">秒杀</a></li>
+					<li><a href="#">促销</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="bannerBox commonWidth">
+			<div class="banner commonBox">
+				<div class="leftList">
+					<ul class="goodsList">
+						<li>
+							<a href="#">饼干糕点</a>
+							<div class="goodsMeau" style="display: block;">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_01.png" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_02.png" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_03.png" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">糖果巧克力</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_04.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_05.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_06.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">饮料/罐头/牛奶</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_07.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_08.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_09.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">蜜饯果干</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_10.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_11.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_12.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">肉类制品</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_13.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_14.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_15.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">坚果炒货</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_16.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_17.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_18.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">海味零食</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_19.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_20.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_21.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">膨化零食</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_22.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_23.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_24.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">豆菌笋类</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_25.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_26.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_27.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">速食/方便面</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_28.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_29.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_30.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">进口零食</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_31.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_32.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_33.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">特产零食</a>
+							<div class="goodsMeau">
+								<ul class="goodsMeauList">
+									<li>
+										<a href="#"><img src="images/meau/icon_34.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_35.jpg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/meau/icon_36.jpg" alt="" /></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				
+				<!--轮播图-->
+				<div class="carousel">
+
+					<img src="images/1.jpg" style="display: block;" />
+					<img src="images/2.jpg" />
+					<img src="images/3.jpg" />
+					<img src="images/4.jpg" />
+
+					<ul>
+						<li class="red">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+					<p class="last">&lt;</p>
+					<p class="next">&gt;</p>
+				</div>
+			</div>
+		</div>
+		<!--秒杀-->
+		<div class="miaoShaBox commonWidth">
+			<div class="miaoSha commonBox">
+				<div class="top-countDown flex ">
+					<h2 class="littleTitle">
+						<span class="secondKill">每日秒杀</span>
+					</h2>
+					<!--倒计时-->
+					<!--<div class="countDown">
+						<div class="colockbox" id="demo02">
+							<span class="day">-</span>
+							<span class="hour">-</span>:
+							<span class="minute">-</span>:
+							<span class="second">-</span>
+						</div>
+					</div>-->
+
+				</div>
+				<div class="down_countDown flex">
+					<div class="leftPart">
+						<a href="#"><img src="images/daily.jpg" alt="" /></a>
+					</div>
+					<div class="rightPart">
+						<ul class="lowPriceList">
+							<li>
+								<a href="#">
+									<img src="images/miaosha/01.jpg" alt="" />
+									<span class="pro_title">百年树芒果干*300g</span>
+									<i class="pro_price">￥36.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="detail.html">
+									<img src="images/miaosha/02.jpg" alt="" />
+									<span class="pro_title">北美蔓越莓*100g</span>
+									<i class="pro_price">￥16.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/miaosha/03.jpg" alt="" />
+									<span class="pro_title">百年树开心果*250g</span>
+									<i class="pro_price">￥59.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/miaosha/04.jpg" alt="" />
+									<span class="pro_title">黄秋葵淡盐味*200g</span>
+									<i class="pro_price">￥26.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/miaosha/05.jpg" alt="" />
+									<span class="pro_title">迷你面包干大蒜味50g</span>
+									<i class="pro_price">￥45.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/miaosha/06.jpg" alt="" />
+									<span class="pro_title">软心甜甜圈哈密瓜200g</span>
+									<i class="pro_price">￥25.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/miaosha/07.jpg" alt="" />
+									<span class="pro_title">牛轧奶芙提子味*500g</span>
+									<i class="pro_price">￥26.00</i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/miaosha/08.jpg" alt="" />
+									<span class="pro_title">风干牛肉香辣味*250g</span>
+									<i class="pro_price">￥54.00</i>
+								</a>
+							</li>
+						</ul>
+						<div class="ks_bg">
+							<img src="images/ks_bg.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--促销-->
+		<div class="shapeBox commonWidth">
+			<div class="shape commonBox">
+				<div class="top-shape">
+					<h3 class="shapeTitle">优惠促销</h3>
+				</div>
+				<div class="down-shape">
+					<ul class="shapeList">
+						<li>
+							<a href="#">
+								<img src="images/shape/01.jpg" alt="" />
+								<span class="pro_title">牧谣手撕牛排麻辣味*250g</span>
+								<i class="pro_price">￥36.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/02.jpg" alt="" />
+								<span class="pro_title">甘源香辣味蚕豆*500g</span>
+								<i class="pro_price">￥16.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/03.jpg" alt="" />
+								<span class="pro_title">天一角香卤味牛肉*500g</span>
+								<i class="pro_price">￥59.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/04.jpg" alt="" />
+								<span class="pro_title">掌柜达人肉松小麻花*1000g</span>
+								<i class="pro_price">￥26.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/05.jpg" alt="" />
+								<span class="pro_title">小老板迷你面包干大蒜味50g</span>
+								<i class="pro_price">￥45.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/06.jpg" alt="" />
+								<span class="pro_title">美伦多软心甜甜圈（哈密瓜）200g</span>
+								<i class="pro_price">￥25.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/07.jpg" alt="" />
+								<span class="pro_title">芭米牛掰掰牛轧奶芙提子味*500g</span>
+								<i class="pro_price">￥26.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/shape/08.jpg" alt="" />
+								<span class="pro_title">阿尔善风干牛肉香辣味*250g</span>
+								<i class="pro_price">￥54.00</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="advList">
+					<ul class="advImgList">
+						<li>
+							<a href="#"><img src="images/advImg/01.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/advImg/02.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/advImg/03.jpg" alt="" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--热销-->
+		<div class="hotBox commonWidth">
+			<div class="hotInnerBox commonBox">
+				<div class="top-hot flex">
+					<h3 class="hotTittle">热卖推荐</h3>
+				</div>
+				<div class="down-hot">
+					<ul class="shapeList hotSaleList">
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/01.jpg" alt="" />
+								<span class="pro_title">咪咪虾味条20g</span>
+								<i class="pro_price">￥0.40</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/02.jpg" alt="" />
+								<span class="pro_title">啃馋你烤凤爪酱烤原味52g</span>
+								<i class="pro_price">￥3.80</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/03.jpg" alt="" />
+								<span class="pro_title">小老板海苔番茄味36g</span>
+								<i class="pro_price">￥6.50</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/04.jpg" alt="" />
+								<span class="pro_title">丽芝士雅嘉奶酪味夹心玉米棒400g</span>
+								<i class="pro_price">￥16.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/05.jpg" alt="" />
+								<span class="pro_title">丽芝士雅嘉奶酪味</span>
+								<i class="pro_price">￥25.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/06.jpg" alt="" />
+								<span class="pro_title">丽芝士雅嘉奶酪味夹心玉米棒200g</span>
+								<i class="pro_price">￥9.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/07.jpg" alt="" />
+								<span class="pro_title">傻二哥砂锅花生白玉咸干味186g</span>
+								<i class="pro_price">￥6.00</i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot_sale/08.jpg" alt="" />
+								<span class="pro_title">W.L.美国青豆香辣味*100g</span>
+								<i class="pro_price">￥4.00</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hotAdv">
+					<a href="#"><img src="images/hot_sale/1.jpg" /></a>
+				</div>
+			</div>
+		</div>
+
+		<!--楼层-->
+		<div class=" floorBox commonWidth r1">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">1F 饼干糕点</h3>
+
+					<ul class="meauList">
+						<li><a href="#">中式糕点</a></li>
+						<li><a href="#">威化饼/蛋糕</a></li>
+						<li><a href="#">饼干糕点</a></li>
+						<li><a href="#">涂层饼干</a></li>
+					</ul>
+
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/01.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+						<ul class="proInfoList num2 common">
+
+						</ul>
+						<ul class="proInfoList num3 common">
+
+						</ul>
+						<ul class="proInfoList num4 common">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class=" floorBox commonWidth r2">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">2F 肉类制品</h3>
+
+					<ul class="meauList">
+						<li><a href="#">鸡肉制品</a></li>
+						<li><a href="#">牛肉制品</a></li>
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/02.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+						<ul class="proInfoList num2 common">
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class=" floorBox commonWidth r3">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">3F 糖果巧克力</h3>
+
+					<ul class="meauList">
+						<li><a href="#">硬糖</a></li>
+						<li><a href="#">软糖</a></li>
+						<li><a href="#">果冻</a></li>
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/03.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+						<ul class="proInfoList num2 common">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class=" floorBox commonWidth r4">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">4F 蜜饯果干</h3>
+					<ul class="meauList">
+						<li><a href="#">水果干</a></li>
+						<li><a href="#">蜜饯</a></li>
+
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/04.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+						<ul class="proInfoList num2 common">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class=" floorBox commonWidth r5">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">5F 坚果炒货</h3>
+					<ul class="meauList">
+						<li><a href="#">坚果炒货</a></li>
+
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/05.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class=" floorBox commonWidth r6">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">6F 茶饮冲剂</h3>
+
+					<ul class="meauList">
+						<li><a href="#">茶饮冲剂</a></li>
+
+					</ul>
+
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/06.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class=" floorBox commonWidth r7">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">7F 海味零食</h3>
+
+					<ul class="meauList">
+						<li><a href="#">海味零食</a></li>
+
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/07.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class=" floorBox commonWidth r8">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">8F 膨化食品</h3>
+
+					<ul class="meauList">
+						<li><a href="#">脆条</a></li>
+						<li><a href="#">米卷</a></li>
+						<li><a href="#">薯片</a></li>
+						<li><a href="#">锅巴</a></li>
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/08.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+						<ul class="proInfoList num2 common">
+
+						</ul>
+						<ul class="proInfoList num3 common">
+
+						</ul>
+						<ul class="proInfoList num4 common">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class=" floorBox commonWidth r10">
+			<div class="floorContent commonBox">
+				<div class="floor-top flex">
+					<h3 class="floorTittle">9F 进口零食</h3>
+					<ul class="meauList">
+						<li><a href="#">泰国</a></li>
+					</ul>
+				</div>
+				<div class="floor-down flex">
+					<div class="leftSide">
+						<img src="images/10.jpg" />
+					</div>
+					<div class="rightSide">
+						<ul class="proInfoList num1 common">
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div id="indexfoot">
+			<!--通过load方法分离footer.html-->
+		</div>
+
+		<!--回到顶部-->
+		<p id="back-to-top">
+			<a href="#top"><img src="images/top.png" /></a>
+		</p>
+
+		<!--louti-->
+		<div id="LoutiNav">
+			<ul>
+				<li class="hover">1F <span>饼干</span> </li>
+				<li>2F <span>肉制</span> </li>
+				<li>3F <span>糖果</span> </li>
+				<li>4F <span>蜜饯</span> </li>
+				<li>5F <span>坚果</span> </li>
+				<li>6F <span>茶饮</span> </li>
+				<li>7F <span>海味</span> </li>
+				<li>8F <span>膨化</span> </li>
+				<li>9F <span>进口</span> </li>
+				<li class="last">Top</li>
+			</ul>
+		</div>
+		
+		
+	</body>
+	<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

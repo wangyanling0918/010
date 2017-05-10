@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/detail.css" />
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	<!--load方法导入footer.html-->
+	<script type="text/javascript">
+		$(function() {
+			$('#indexfoot').load("footer.html", function(res, status) {
+				console.log(status);
+				//需要写这句话才能导入js文件
+				var script = document.createElement('script');
+				script.src = "js/footer.js";
+				$('body').append(script);
+			});
+		})
+	</script>
+
+</head>
+
+<body>
+	<div class="headerBox commonWidth">
+	<div class="header flex commonBox">
+		<div class="header-left">
+			<span>您好，欢迎您来到零食网！</span>
+			<div id="top_center">
+				<a href="entry.html?detail">[登录]</a>
+				<a href="register.html">[免费注册]</a>
+			</div>
+		</div>
+		<ul class="header-right">
+			<li><a href="#">我的订单</a></li>
+			<li>
+				<a href="#" class="line"></a>
+			</li>
+			<li><a href="#">积分兑换</a></li>
+			<li>
+				<a href="#" class="line"></a>
+			</li>
+			<li><a href="#">帮助中心</a></li>
+			<li>
+				<a href="#" class="line"></a>
+			</li>
+			<li><a href="#">官方微博</a></li>
+		</ul>
+	</div>
+</div>
+<div class="logoBox commonWidth">
+			<div class="logoContent flex commonBox">
+				<h1 class="logo">
+	    			<a href="index.html"><img src="images/logo.jpg"/></a>
+	    		</h1>
+				<div class="searchBox">
+					<form action="" method="post" class="formBox">
+						<div class="search flex">
+							<input type="text" name="" id="searchTxt" placeholder="搜索" />
+							<input type="submit" id="sub" value="找零食" />
+						</div>
+					</form>
+				</div>
+				<div class="hot">
+					<ul class="hotList">
+						<li><a href="#">海苔</a></li>
+						<li><a href="#">果冻</a></li>
+						<li><a href="#">饼干</a></li>
+						<li><a href="#">锅巴</a></li>
+						<li><a href="#">威化饼</a></li>
+					</ul>
+				</div>
+				<div id="logo_right">
+					<span class="red">0</span>
+					<span class="span2">我的购物车</span>
+				</div>
+			</div>
+		</div>
+		<div class="navBox commonWidth">
+			<div class="nav commonBox">
+				<ul class="navList">
+					<h3><a href="#">全部商品分类</a></h3>
+					<li class="home"><a href="#" >首页</a></li>
+					<li><a href="#">秒杀</a></li>
+					<li><a href="#">促销</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+	<div class="main flex">
+		<div class="content">
+			<div class="wrap_left">
+				<div class="myimg">
+					<div class="cover"></div>
+				</div>
+				<div class="bg_box">
+					<img src="images/detail/big.jpg" class="bgbox_img" />
+				</div>
+			</div>
+			<div class="wrap_right">
+				<form autocomplete="off">
+					<h3 class="name">阿弟仔升级版北美蔓越莓*100g</h3>
+					<div class="price">
+						<p class="price1">
+							<em>￥</em>
+							<span id="shopprice">7.00</span>
+						</p>
+					</div>
+					<div class="info_wrap">
+						<p class="num">
+							编号： <em>04010121</em>
+						</p>
+						<p class="info">
+							品牌：
+							<a href="#" title="阿弟仔"><em>阿弟仔</em></a>
+							<span>|</span> 产 地：<a href="#"><em>浙江</em></a> <span>|</span> 净含量：
+							<em>100克</em>
+						</p>
+						<p class="jifen">
+							积分：
+							<em>7分</em>
+						</p>
+						<div id="storeinfocontainer">
+							<div class="site">
+								<em>库存：</em>
+								<span>送至:</span>
+								<span class="bj">北京</span>
+								<ul class="siteList">
+									<li>
+										<a href="#" class="firstLi beiJing">北京</a>
+									</li>
+									<li>
+										<a href="#">上海</a>
+									</li>
+									<li>
+										<a href="#">天津</a>
+									</li>
+									<li>
+										<a href="#">重庆</a>
+									</li>
+									<li>
+										<a href="#">河北</a>
+									</li>
+									<li>
+										<a href="#">山西</a>
+									</li>
+									<li>
+										<a href="#">河南</a>
+									</li>
+									<li>
+										<a href="#">辽宁</a>
+									</li>
+									<li>
+										<a href="#">吉林</a>
+									</li>
+									<li>
+										<a href="#">黑龙江</a>
+									</li>
+									<li>
+										<a href="#">内蒙古</a>
+									</li>
+									<li>
+										<a href="#">江苏</a>
+									</li>
+									<li>
+										<a href="#">山东</a>
+									</li>
+									<li>
+										<a href="#">安徽</a>
+									</li>
+									<li>
+										<a href="#">浙江</a>
+									</li>
+									<li>
+										<a href="#">福建</a>
+									</li>
+									<li>
+										<a href="#">湖北</a>
+									</li>
+									<li>
+										<a href="#">湖南</a>
+									</li>
+									<li>
+										<a href="#">广东</a>
+									</li>
+									<li>
+										<a href="#">广西</a>
+									</li>
+									<li>
+										<a href="#">江西</a>
+									</li>
+									<li>
+										<a href="#">四川</a>
+									</li>
+									<li>
+										<a href="#">海南</a>
+									</li>
+									<li>
+										<a href="#">贵州</a>
+									</li>
+									<li>
+										<a href="#">云南</a>
+									</li>
+									<li>
+										<a href="#">西藏</a>
+									</li>
+									<li>
+										<a href="#">陕西</a>
+									</li>
+									<li>
+										<a href="#">甘肃</a>
+									</li>
+									<li>
+										<a href="#">青海</a>
+									</li>
+									<li>
+										<a href="#">宁夏</a>
+									</li>
+									<li>
+										<a href="#">新疆</a>
+									</li>
+									<li>
+										<a href="#">台湾</a>
+									</li>
+									<li>
+										<a href="#">香港</a>
+									</li>
+									<li>
+										<a href="#">澳门</a>
+									</li>
+									<li>
+										<a href="#">钓鱼岛</a>
+									</li>
+									<li>
+										<a href="#">海外</a>
+									</li>
+								</ul>
+							</div>
+							<span id="stocktext" class="text">该商品现在可以下单</span>
+						</div>
+						<div class="number">
+							<label>数量</label>
+							<div class="minus">-</div>
+							<input type="text" value="1"/>
+							<div class="plus">+</div>
+							<span>件</span>
+						</div>
+						
+					</div>
+					<div class="btn">
+						<div class="goodsAdd btnCommon">加入购物车</div>
+						<div class="goBuy btnCommon">立即购买</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+		<!--商品图片-->
+		<div class="imgDetial">
+			<div class="ruleBox">
+				<div class="ruleText" id="fav_info" style="">
+					<span id="rule">秒杀活动规则：</span>
+					<ul>
+						<li>1、活动时间：每天一场秒杀（0:00--24:00），以活动商品设置的秒杀活动时间为准；</li>
+						<li>2、活动对象：中国零食网所有注册会员；</li>
+						<li>3、为惠及广大用户朋友，每一位会员朋友每期最多只能购买3款秒杀产品，若还需购买更多秒杀产品则按正常价购买；</li>
+						<li>4、每一款秒杀产品最多购买数量为1，若购买数量大于1以上则全部按正常价购买；</li>
+						<li>5、参与每日秒杀活动，仍然享受网站的运费减免政策；</li>
+						<li>6、完成支付后，我们将会尽快安排发货，订单详情请到“订单速查”处查询或致电客服热线：400-600-0404。</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabListBox">
+				<ul class="tabList">
+					<li><a href="#">零食详情</a></li>
+					<li><a href="#">零食点评</a></li>
+					<li><a href="#">服务保障</a></li>
+				</ul>
+				<div class="tabContent" id="lingshi_a">
+					<dl class="guiGe">
+						<dt>规格参数：</dt>
+						<dd>品牌: 阿弟仔</dd>
+						<dd> 阿弟仔升级版北美蔓越莓*100g</dd>
+						<dd>产 地：浙江</dd>
+						<dd>毛重: 105克</dd>
+						<dd>种类：水果干</dd>
+						<dd>保质期：12个月</dd>
+					</dl>
+					<div class="imgSet">
+
+						<p>
+							<img src="images/xq2.jpg" alt="" />
+							<img src="images/xq1.jpg" alt="" />
+							<img src="images/xq3.jpg" alt="" />
+
+							<img src="images/xq4.jpg" />
+
+							<img src="images/xq5.jpg" alt="" />
+							<img src="images/xq6.jpg" alt="" />
+							<img src="images/xq7.jpg" alt="" />
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!--底部-->
+	<div id="indexfoot">
+		<!--通过load方法分离footer.html-->
+	</div>
+	
+	<!--登录弹框-->
+		<div class="entry_right">
+			<span class="close"><img src="images/close.png"/></span>
+			<p class="entry_right_title">
+				<span>会员登录</span>
+				<a href="#" class="freeRegister">免费注册</a>
+			</p>
+			<form>
+				<input type="text" placeholder="用户名/邮箱/电话号码" class="input1" />
+				<input type="password" placeholder="密码" class="input1" />
+				<p class="clear">
+					<input type="text" placeholder="验证码" class="input2" />
+					<span class="verCode"></span>
+				</p>
+				<p>
+					<input type="checkbox" id="check" />
+					<label for="check">自动登录</label>
+					<a href="#">找回密码</a>
+				</p>
+				<input type="submit" value="登录" />
+				<p class="tuijian_title">亲，没有账号，你可以选择以下快捷登录方式！</p>
+			</form>
+			<div class="entry_right_bottom">
+				<img src="images/qq.png" />
+			</div>
+		</div>
+		<!--注册页面-->
+		<div class="register_left">
+		<p class="tishi">会员注册 <span class="close"><img src="images/close.png"/></span></p>
+		<form class="tel">
+			<p>
+				<label>*用户名：</label>
+				<input type="text" placeholder="输入手机号" />
+			</p>
+			<p>
+				<label>*设置密码：</label>
+				<input type="password" placeholder="创建密码" />
+			</p>
+			<p>
+				<label>*确认密码：</label>
+				<input type="password" placeholder="确认密码" />
+			</p>
+			<p class="checkBox">
+				<input type="checkbox" id="check" checked="checked" />
+				<label for="check">同意《注册服务条款》</label>
+			</p>
+			<input type="submit" value="注册" />
+			
+		</form>
+		
+	</div>
+	    <div class="lbOverlay"></div>
+</body>
+
+</html>

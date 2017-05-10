@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/shopCart.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopCart.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#indexfoot').load("footer.html",
+					function(res, status) {
+						console.log(status); //需要写这句话才能导入js文件
+						var script = document.createElement('script');
+						script.src = "js/footer.js";
+						$('body').append(script);
+					});
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<div class="headerBox commonWidth">
+			<div class="header flex commonBox">
+				<div class="header-left">
+					<span>您好，欢迎您来到零食网！</span>
+					<div id="top_center">
+						<a href="entry.html?shopCart">[登录]</a>
+						<a href="register.html">[免费注册]</a>
+					</div>
+				</div>
+				<ul class="header-right">
+					<li><a href="#">我的订单</a></li>
+					<li>
+						<a href="#" class="line"></a>
+					</li>
+					<li><a href="#">积分兑换</a></li>
+					<li>
+						<a href="#" class="line"></a>
+					</li>
+					<li><a href="#">帮助中心</a></li>
+					<li>
+						<a href="#" class="line"></a>
+					</li>
+					<li><a href="#">官方微博</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="logoBox commonWidth">
+			<div class="logoContent flex commonBox">
+				<h1 class="logo">
+	    			<a href="index.html"><img src="images/logo.jpg"/></a>
+	    		</h1>
+			</div>
+		</div>
+		<!------------------------------------------------------------------->
+		<div id="cart">
+			<div class="cart_top">
+				<span>全部商品</span>
+				<a href="index.html">返回首页</a>
+			</div>
+			<div class="cart_no">
+				购物车还是空的^_^
+			</div>
+			<div class="cart_yes">
+				<table>
+					<thead>
+						<tr>
+							<th>全选</th>
+							<th>商品名</th>
+							<th>单价（元）</th>
+							<th>数量</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				<div class="cart_yes_settlement">
+					<div class="settlement_left">
+						<span>
+							<input type="checkbox" style="outline: none;" id="checked"/>
+							<label for="checked" style="margin-left: -5px;">全选</label>
+						</span>
+						<span class="delGoods">删除选中的商品</span>
+						<span class="delCart">清空购物车</span>
+					</div>
+					<div class="settlement_center">
+						<p>商品金额：<span class="jinE"></span>元</p>
+						<p>运费：<span class="yunFei">0.00</span>元</p>
+						<p style="color: #e21357; font-weight: bold;">总计：<span class="zje"></span>元</p>
+					</div>
+					<div class="settlement_right">
+						<input type="button" value="去结算" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------------------------------------->
+		<!--底部-->
+		<div id="indexfoot">
+			<!--通过load方法分离footer.html-->
+		</div>
+
+	</body>
+
+</html>
